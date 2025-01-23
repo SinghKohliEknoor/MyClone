@@ -104,6 +104,156 @@ export default function App() {
     
   );
 }
-{/*--- Harkarn ---*/}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "white",
+  },
+  header: {
+    marginTop:15,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    padding: 15,
+    backgroundColor: "white",
+  },
+  logo: {
+    width: 40,
+    height: 40,
+  },
+  headerIcons: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  notificationBadge: {
+    height:24,
+    width:18,
+    borderRadius: 10,
+    marginRight: 10,
+    textAlign: "center",
+  },
+  profileCircle: {
+    backgroundColor: "orange",
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  profileText: {
+    color: "#fff",
+    fontSize: 12,
+  },
+  tabs: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingVertical: 10,
+    backgroundColor: "white",
+  },
+  tabItem: {
+    color: "black",
+    fontSize: 14,
+    fontWeight: "400",
+  },
+  activeTab: {
+    color: "blue",
+    fontWeight:'bold',
+    textDecorationLine:'underline',
+  },
+  adSection: {
+    padding: 15,
+    backgroundColor: "white",
+  },
+  adContent: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  adTitle: {
+    flex: 1,
+    color: "black",
+    fontSize: 18,
+    marginBottom: 10,
+  },
+  adImage: {
+    width: 330,
+    height: 110,
+    marginRight: 10,
+    borderRadius: 5,
+  },
+  adButton: {
+    backgroundColor: "slategrey",
+    paddingHorizontal: 20,
+    paddingVertical: 3,
+    borderRadius: 20,
+    alignSelf: "flex-end",
+    marginLeft:80,
+  },
+  adButtonText: {
+    color: "white",
+    fontSize:15,
+  },
+  sectionTitle: {
+    color: "black",
+    fontSize: 16,
+    fontWeight: "600",
+    marginVertical: 10,
+    paddingHorizontal: 15,
+  },
+  suggestedApps: {
+    paddingHorizontal: 15,
+  },
+  appItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 10,
+  },
+  apptiktok: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 10,
+  },
+  appIcon: {
+    width: 60,
+    height: 60,
+    marginRight: 15,
+    borderRadius: 50,
+  },
+  appTitle: {
+    color: "black",
+    fontSize: 14,
+  },
+  appCategory: {
+    color: "black",
+    fontSize: 12,
+  },
+  appRating: {
+    color: "black",
+    fontSize: 12,
+  },
+  bottomNav: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingVertical: 10,
+    backgroundColor: "white",
+  },
+  navItem: {
+    color: "black",
+    fontSize: 14,
+    fontWeight: "400",
+  },
+  activeNav: {
 
+    color: "blue",
+    fontWeight:'bold',
+    textDecorationLine:'underline',
+  },
+  buttonstyle: {
+    alignItems:'center',
+    marginLeft:135,
+    textAlign:'center',
+    padding: 10,
+    width: 80,
+    color: 'white',
+    backgroundColor: 'red',
+    borderRadius:15,
+  },
 });
