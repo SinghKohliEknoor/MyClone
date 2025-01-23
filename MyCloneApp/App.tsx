@@ -53,9 +53,40 @@ export default function App() {
           </View>
         </View>
 
-       {/* --- Pranav ---*/}
+        <Text style={styles.sectionTitle}>Sponsored • Suggested for you</Text>
+        <View style={styles.suggestedApps}>
+          {[
+            {
+              name: "Crypto.com - Buy BTC",
+              category: "Finance",
+              rating: 4.6,
+              image: require('./assets/crypto.png'),
+            },
+            {
+              name: "Coinbase: Buy Bitcoin",
+              category: "Finance",
+              rating: 4.5,
+              image: require('./assets/coinbase.png'),
+            },
+            {
+              name: "Lyft",
+              category: "Travel & Local",
+              rating: 4.3,
+              image: require('./assets/lyft.png'),
+            },
+          ].map((app, index) => (
+            <View key={index} style={styles.appItem}>
+              <Image style={styles.appIcon} source={app.image } />
+              <View>
+                <Text style={styles.appTitle}>{app.name}</Text>
+                <Text style={styles.appCategory}>{app.category}</Text>
+                <Text style={styles.appRating}>⭐ {app.rating}</Text>
+              </View>
+            </View>
+          ))}
+        </View>
        
-      {/*---Pranav till here ---*/}
+      </ScrollView>
       <View>
         <TouchableOpacity onPress={()=>{alert("Alert Button pressed")}}>
           <Text style={styles.buttonstyle}>Alert</Text>
