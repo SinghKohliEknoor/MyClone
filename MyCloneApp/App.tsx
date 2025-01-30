@@ -247,8 +247,7 @@ const styles = StyleSheet.create({
     textDecorationLine:'underline',
   },
   buttonstyle: {
-    alignItems:'center',
-    marginLeft:135,
+    alignSelf:'center',
     textAlign:'center',
     padding: 10,
     width: 80,
